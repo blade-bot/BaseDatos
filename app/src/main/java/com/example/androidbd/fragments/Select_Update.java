@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.example.androidbd.ActualizaLogins;
+import com.example.androidbd.ActualizarProductos;
 import com.example.androidbd.MetodosBaseDatos;
 import com.example.androidbd.R;
 
@@ -56,8 +57,9 @@ public class Select_Update extends Fragment {
         lista_select.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent4 = new Intent(getContext(), ActualizaLogins.class);
-                intent4.putExtra("id_actualizar", SepararIdUpdate(adapter_select.getItem(position).toString()));
+                Intent intent4 = new Intent(getContext(), ActualizarProductos.class);
+                Log.i("dato null ?", String.valueOf(SepararIdUpdate(adapter_select.getItem(position).toString())));
+                intent4.putExtra("id_actualizar", ""+SepararIdUpdate(adapter_select.getItem(position).toString()));
                 startActivity(intent4);
             }
         });

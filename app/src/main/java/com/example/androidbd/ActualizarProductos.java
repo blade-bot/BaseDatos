@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -39,14 +40,15 @@ public class ActualizarProductos extends AppCompatActivity {
         db = mbd.getReadableDatabase();
         if (db != null)
         {
-            Cursor c = db.rawQuery("SELECT nombre_producto, precio FROM Productos WHERE id_productos=?", new String[]{});
+            Log.i("valor idatos",String.valueOf(id_dato));
+            Cursor c = db.rawQuery("SELECT id_productos, nombre_producto, precio FROM Productos WHERE id_productos=?", new String[]{id_dato});
             if (c.moveToFirst())
             {
                 do {
-                    tv1.setText(c.getString(0));
-                    tv2.setText(c.getString(1));
-                    et1.setText(c.getString(0));
-                    et2.setText(c.getString(1));
+                    tv1.setText(c.getString(1));
+                    tv2.setText(c.getString(2));
+                    et1.setText(c.getString(1));
+                    et2.setText(c.getString(2));
                 }while (c.moveToNext());
             }
         }
