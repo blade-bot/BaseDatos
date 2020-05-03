@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_select"
+        android:icon="@drawable/ic_action_select"
+        android:title="@string/title_select"
+        android:textColor="@color/colorTextBlack"/>
+    <item
+        android:id="@+id/option_add"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/title_add"
+        android:textColor="@color/colorTextBlack"/>
+    <item
+        android:id="@+id/option_delete"
+        android:icon="@drawable/ic_action_delete"
+        android:title="@string/title_delete"
+        android:textColor="@color/colorTextBlack"/>
+    <item
+        android:id="@+id/option_logins"
+        android:icon="@drawable/ic_action_image_user_login"
+        android:title="@string/title_logins"
+        android:textColor="@color/colorTextBlack"/>
+
+</menu>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AndroidBD</string>
+    <string name="app_creator">Uriel Rodrirguez</string>
+    <string name="creator_email">urielrodriguezblanco@gmail.com</string>
+
+    <string name="title_select">Productos</string>
+    <string name="title_add">Agregar Productos</string>
+    <string name="title_edit">Editar Productos</string>
+    <string name="title_update">Actualizar Productos</string>
+    <string name="title_delete">Eliminar Productos</string>
+    <string name="title_logins">Logins</string>
+
+    <string name="boton_agregar">Agregar Producto</string>
+    <string name="boton_eliminar">Eliminar Producto</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+</resources>

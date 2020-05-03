@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar_simple2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modificar Productos"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Producto Anterior"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/text_view_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio del Producto Anterior"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/text_view_precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/edit_text_productos_actualizar_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Nombre del Producto"/>
+    <EditText
+        android:id="@+id/edit_text_productos_actualizar_precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Precio del Producto"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/boton_actualizar_producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:text="Actualizar Producto"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorTextLight"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+</LinearLayout>
